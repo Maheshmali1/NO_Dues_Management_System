@@ -15,6 +15,7 @@ int main()
 
     do
     {
+        // Dashborad for option choice.
         cout << "\n*********  Welcome to No Dues Management System for Institutes.  *********"<<endl;
         cout << "\nChoose the option from below what you want to perform" << endl;
         cout << "1.Show All student Details." << endl;
@@ -28,11 +29,13 @@ int main()
         switch (choice)
         {
         case 1:
+            // Getting all details of students.
             cout << "*******  Below are the details of all students ******* " << endl;
             showAllStudents();
             break;
 
         case 2:
+            // Adding a student.
             cout << "Enter the required details for adding a student :" << endl;
             cout << "Enter the Roll NO : ";
             cin >> rollNo;
@@ -45,6 +48,7 @@ int main()
             break;
 
         case 3:
+            // Details for particular student
             cout << "\nEnter the roll No of student for details : ";
             cin >> rollNo;
 
@@ -53,14 +57,17 @@ int main()
             break;
 
         case 4:
+            // Call for LibraryDue addition
             addDues(1);
             break;
 
         case 5:
+        // Call for Laboratary addition
             addDues(2);
             break;
 
         case 6:
+            // Call for Inftrastructure Due addition
             addDues(3);
             break;
 
@@ -68,6 +75,7 @@ int main()
             break;
         }
 
+        // Input asking whether to keep using this application.
         cout << "\nDo you want use other features(press Y/N) : " << endl;
         cin >> restart;
     } while (restart == 'Y' || restart == 'y');
