@@ -1,6 +1,6 @@
 # NO_Dues_Management_System
 
-# Tech Stack : C++ | OOPs | STL | CLI
+# Tech Stack => C++ | OOPs | STL | CLI
 - The "No Dues Management System for Institutes" project is a software application designed using the object-oriented programming language C++. 
 It aims to provide a hassle-free process for managing the final no dues clearance of students from an educational institute.
 
